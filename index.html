@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+    rel="stylesheet"
+  />
+    <title>Document</title>
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="battle-transition"></div>
+
+        <canvas></canvas>
+
+        <div class="userInterface">
+            <div class="top-box">
+                <h1>Monin</h1>
+                <div class="health-container-1">
+                    <div class="health-1"></div>
+                    <div class="health-2" id="enemyHealthBar"></div>
+                </div>
+            </div>
+            <div class="bottom-box">
+                <h1>Shiba</h1>
+                <div class="health-container-2">
+                    <div class="health-1"></div>
+                    <div class="health-2" id="shibaHealthBar"></div>
+                </div>
+            </div>
+            <div class="attacks-bar">
+                <div class="dialogue">dialogue</div>
+                <div class="btn-part">
+                </div>
+                <div class="type-part">
+                    <div class="attackType">Attack Type</div>
+                </div> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="data/audio.js"></script>
+<script src="data/battleZones.js"></script>
+<script src="data/collisions.js"></script>
+<script src="data/attacks.js"></script>
+<script src="data/monsters.js"></script>
+<script src="classes.js"></script>
+<script src="index.js"></script>
+<script src="battleScene.js"></script>

@@ -1,0 +1,130 @@
+* {
+    font-family: 'Press Start 2P', cursive;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+}
+
+.container{
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+}
+
+.battle-transition {
+    background-color: black;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute; 
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.userInterface {
+    display: none;
+}
+
+.top-box {
+    background-color: white;
+    width: 250px;
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    border: 4px black solid;
+    border-radius: 15px;
+    padding: 12px;
+}
+
+.bottom-box {
+    background-color: white;
+    width: 250px;
+    position: absolute;
+    bottom: 150px;
+    right: 150px;
+    border: 4px black solid;
+    border-radius: 15px;
+    padding: 12px;
+}
+
+.health-container-1,
+.health-container-2 {
+    position: relative;
+}
+
+.health-1 {
+    height: 5px;
+    background-color: #ccc;
+    margin-top: 10px;
+}
+.health-2 {
+    height: 5px;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.attacks-bar {
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top:4px black solid;
+    display: flex;
+}
+
+.dialogue {
+    position: absolute;
+    background-color: white;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 12px;
+    display: none;
+    cursor: pointer;
+}
+
+.btn-part {
+    width: 66.66%;
+    height: 110px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+button {
+    border: 0;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.type-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33.33%;
+    border-left: 4px black solid ;
+}
+
+h1 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.attackType {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
